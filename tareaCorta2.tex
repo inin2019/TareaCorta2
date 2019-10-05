@@ -432,15 +432,13 @@
 
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
-\begin{abstract}
-Este manual pretende demostrar las capacidades de \LaTeX\xspace  como herramienta de edición de textos científicos y en general como una herramienta
-que permite a los autores concentrarse en el contenido que quieren difundir y no tanto en el formato final de este. También expone las prinicipales
-funcionalidades y características del lenguaje TeX para la producción de documentos.
-\end{abstract}
+% \begin{abstract}
+
+% \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-\LaTeX\xspace , Introducción a la investigación, Tarea Corta.
+\LaTeX\xspace , Introducción a la investigación, Tarea Corta, Experimentos, Historia.
 \end{IEEEkeywords}
 
 
@@ -460,42 +458,50 @@ funcionalidades y características del lenguaje TeX para la producción de docum
 
 
 
-\section{Historia de \LaTeX }
-% The very first letter is a 2 line initial drop letter followed
-% by the rest of the first word in caps.
-% 
-% form to use if the first word consists of a single letter:
-% \IEEEPARstart{A}{demo} file is ....
-% 
-% form to use if you need the single drop letter followed by
-% normal text (unknown if ever used by the IEEE):
-% \IEEEPARstart{A}{}demo file is ....
-% 
-% Some journals put the first two words in caps:
-% \IEEEPARstart{T}{his demo} file is ....
-% 
-% Here we have the typical use of a "T" for an initial drop letter
-% and "HIS" in caps to complete the first word.
-\IEEEPARstart{E}{ra} el final de los años 70, Jimmy Carter era el presidente de los Estados Unidos y los Bee Gees sonaban en la radio. Durante esa época también se gestaba el segundo volumen de  una de las obras literarias más significativas para el mundo de la computación, concretamente The Art of Computer Programming de Donald E. Knuth, reconocido matemático y científico de la computación quien ganó el premio Turing en 1974, y que precisamente recibió el galardón debido a sus contribuciones al campo de la computación en el primer volumen de su serie de libros.
-Cuando Donald Knuth recibió los primeros ejemplares del segundo volumen se sintió profundamente decepcionado por la calidad de la tipografía utilizada por su editorial, al mismo tiempo tuvo la oportunidad de ver un nuevo libro de Inteligencia Artificial de Patrick Wilson, el cual fue producido de manera digital, por lo que se le ocurrió que una tipografía no es más que ordenar secuencias de 0’s y 1’s, por lo que calculó que en seis meses podría producir un lenguaje que le permitiera producir tipografía matemática de manera elegante y bella con la cual poder generar textos impresos agradables para sus lectores.
-Al final el esfuerzo no fue de 6 meses sino que tomó a Donald Knuth y las personas que colaborarón con él aproximadamente 10 años en completar la primera version de TeX cuyo nombre se origina de los caracteres griegos tau, epsilon y chi\cite{ganguli_2013}.
-LaTeX por su parte es una serie de macros y plantillas que extienden el lenguaje de TeX para facilitar su uso académico y permitir a los investigadores concentrarse en el contenido de lo que tienen que escribir y no en su apariencia visual, dejando para esto que los macros de LaTeX definan la apariencia final del documento. LaTeX fue creado por Leslie Lamport en 1983 quien creó una serie de macros para TeX debido a su propia necesidad de escribir un libro, por lo que Peter Gordon de la editorial Addison-Weasley convenció a Lamport de escribir un libro con el manual de sus macros, dando origen a \LaTeX\xspace . \cite{lamport_1994}
-
+\section{Erátostenes y la circunferencia de la tierra}
 %*******************************Usos acádemicos extension e importancia*******************************%
-\section{Usos académicos, extensión e importancia}
-Una de las principales ventajas que ofrece el sistema de composición de textos \LaTeX\xspace  es la gran calidad tipográfica con la que se generan sus textos. En parte a que ese fue el objetivo que motivo su creación.
-Es particularmente útil en la creación de libros y artículos de difusión científica que contienen una gran cantidad de fórmulas matemáticas.
+\subsection{Contexto Histórico}
+Eratóstenes fue un académico de la antigua Grecia (276 a.C - 195 a.C) conocido por realizar la primera medición conocida
+de la Tierra. Eratóstenes parte de la suposición griega de que la tierra es esférica,
+y que en comparación con otros cuerpos celestes,
+esta era diminuta. Esto se explica en la obra \emph{Acerca del clelo},
+de Aristóteles y escrita un siglo antes de Eratóstenes.
+Entre los argumentos lógicos de la obra se mencionan entre otros hechos que los viajeros ven 
+estrellas distintas si viajan al norte o al sur y que algunas estrellas visibles en lugares como Egipto o Chipre no son visibles en lugares más 
+septentrionales.
+Eratóstenes nació al norte de África, y se educó en Atenas, fue un pensador influyente en muchas áreas y escribió \emph{Geographica}, una obra de 
+geografía conocida por ser la primera en utilizar el sistema de parelos y meridianos conocido en la actualidad.
 
-Al ser el sistema \LaTeX\xspace  de código abierto permite que se creen nuevos paquetes que amplian su funcionalidad, por lo que
-existe una gran cantidad de paquetes disponibles \cite{ctan}. La mayoría de estos paquetes están regulados por el proyecto \LaTeX\xspace 3 \cite{thelatex3}.
+\subsection{El experimento}
+Eratóstenes buscaba obtener una medición más precisa y verificar o desmentir estimaciones anteriores del tamaño real de la Tierra.
+Aristóteles calculaba este tamaño en 400.000 estadios que es aproximadamente unos 64.000 kilómetros, algo lejos del valor real del diámetro de la Tierra (40.000 Km)
+Eratóstenes asumió que si la tierra era de hecho un cuerpo pequeño y esférico, entonces otros cuerpos como el Sol deberían de encontrarse muy lejos  de manera que sus rayos
+deberían ser prácticamente paralelos en todos los puntos de la Tierra.
 
-Al ser un sistema de producción de texto basado en comandos e instrucciones, permite una separación clara de la producción del contenido y del formato final del mismo.
-A diferencia de otros sistemas que emplean el sistema WYSIWYG(\textit{What You See Is What You Get}), donde el usuario debe estar pendiente completamente del formato final del 
-documento.
+Utilizando este hecho como base de su experimento y 
+conociendo por relatos que en la ciudad de Siena (Asuán, Egipto)
+durante el solsticio de verano el sol del mediodía se ubicaba justo por encima de la cabeza. De este modo
+no se proyectaba ninguna sombra en un objeto vertical.
 
-Finalmente, \LaTeX\xspace  ofrece una uniformidad en la salida, por lo que esta siempre será la misma sin importar el dispositivo que se utilice.
-Y el contenido producido puede ser exportado a muchos formatos que faciliten su distribución, tales como: PDF, Postscript, HTML, entre otros.
+Al mismo tiempo en Alejandría, ciudad ubicada al norte de Siena, se conocía que nunca se podía observar al sol 
+directamente sobre la cabeza, razón por la cuál los objetos verticales siempre proyectaban una sombra.
 
+Este hecho, sirvió a Eratóstenes para realizar los cálculos de medición de la circunferencia de la tierra con gran precisión.
+La simplicidad del experimento permite determinar dimensiones cósmicas midiendo unicamente la longitud de la sombra proyctada por 
+un reloj solar en Alejandría, mientras que en Siena ocurría el solsticio y no se proyectaba sombra.
+
+De manera similar al siguiente gráfico:
+\begin{center}
+  \includegraphics[width=60mm]{Eratostenes.jpg}
+\end{center}
+
+Deacuerdo a la geometría Euclideana, los ángulos interiores
+de una línea que interseca dos líneas paralelas son iguales, por lo tanto el ángulo formado por el Zenith y el Sol, es igual al formado
+por los radios desde el centro de la tierra a Siena y Alejandría.
+
+Esto le sirvió para determinar la fracción de la circunferencia representada por la distancia ya conocida entre Siena y Alejandría que había sido 
+determinada por los topográfos reales del gobierno Egipcio, con esto logró determinar el tamaño de la circunferencia 
+de la Tierra en unos 252 000 estadios, lo que es aproximadamente 40.200 Km una cifra bastante cercana a la aceptada en la actualidad de 40.075Km
 
 %*******************************Estilos de documentos *********************************************%
 \section{Estilos de documento}
