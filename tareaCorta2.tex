@@ -492,7 +492,10 @@ un reloj solar en Alejandría, mientras que en Siena ocurría el solsticio y no 
 
 De manera similar al siguiente gráfico:
 \begin{center}
+  \begin{figure}[h!]
   \includegraphics[width=60mm]{Eratostenes.jpg}
+  \caption{Cálculo realizado por Eratóstenes.}
+  \end{figure}
 \end{center}
 
 Deacuerdo a la geometría Euclideana, los ángulos interiores
@@ -501,48 +504,51 @@ por los radios desde el centro de la tierra a Siena y Alejandría.
 
 Esto le sirvió para determinar la fracción de la circunferencia representada por la distancia ya conocida entre Siena y Alejandría que había sido 
 determinada por los topográfos reales del gobierno Egipcio, con esto logró determinar el tamaño de la circunferencia 
-de la Tierra en unos 252 000 estadios, lo que es aproximadamente 40.200 Km una cifra bastante cercana a la aceptada en la actualidad de 40.075Km
+de la Tierra en unos 252 000 estadios, lo que es aproximadamente 40.200 Km una cifra bastante cercana a la aceptada en la actualidad de 40.075Km \cite{crease_2014}
 
-%*******************************Estilos de documentos *********************************************%
-\section{Estilos de documento}
+\section{Hershey - Chase: Función genética del ADN}
+\subsection{Contexto Histórico}
 
-\LaTeX\xspace  define los documentos utilizando clases, estas pueden ser predefinidas o venir como parte de un paquete de extensión o incluso ser escritas por el mismo autor.
-Estas clases consisten de un archivo cls con definiciones que establecen entre otras cosas el aspecto general que tendrá el documento.
-Se definen comandos como \emph{\textbackslash{}section} o \emph{\textbackslash{}title}.
+A principios del siglo XX se aceptaba que el material genético de las células
+era formado por proteínas. Esto principalmente a que se conocía que la estructura 
+del ADN, por las investigaciones de Phoebus Levene en 1933, consistía de cuatro elementos llamados
+nucleótidos.
+Debido a esta limitación en la cantidad de bloques que formaban las estructuras de ADN se consideraba
+imposible que este sirviese como mecánismo para transferir información genética, como el color de piel, ojos, entre otros.
+Las proteínas, elementos también presentes en las células ofrecían un mayor factor de diversidad y podían combinarse de muchas más maneras. Por esta
+razón se creía que eran estas las encargadas de transmitir las características en cada generación.
 
-La clase de un documento se define con:
+En 1935, Oswald Avery realizó una serie de experimentos que mostraron que el ADN facilitaba un fénomeno genético en las bacterias, pudiendo demostrar que el factor de herencia 
+que causaba transformaciones en las bacterias contenía ADN. Sin embargo, no se pudo descartar que otros componentes sin ADN estuviesen involucrados en dicha transformación.
+Por esta razón, muchos científicos seguían considerando a las proteínas como las encargadas de transmitir la herencia genética de las células.
 
+\subsection{El experimento}
+En 1951, los científicos Alfred Hershey y Martha Chase iniciaron una serie de experimentos con el objetivo de desacreditar
+las afirmaciones de Avery. En sus experimentos se analizó como los bacteriófagos infectaban las bacterias.
+Descubrieron que cuando un fago infecta a una bacteria, inicialmente se pega al exterior de la bacteria y despues inserta parte de su contenido 
+al interior de la bacteria, lo que le permite replicarse dentro de la misma y generar nuevos bacteriófagos que invadan a las células cercanas.
+
+La técnica utilizada por Hershey y Chase consistía en usar etiquetas de isótopos radiactivos.
+Los elementos químicos pueden existir en diferentes formas estructurales denominadas isótopos, que pueden 
+tener diferentes niveles de radiactividad que pueden ser detectados por los científicos y de esta manera determinar si las partes etiquetadas fueron transmitidas de los fagos a las bacterias.
+
+Etiquetando la parte de proteínas  del bacteriófago con isótopos de azufre y el ADN con fósforo radiactivo, y utilizando una licuadora común, descubrieron que las proteínas permitían al fago
+pegarse a la membrana superficial de la bactería y lo que se inyectaba dentro del interior de la bactería era de hecho el ADN del bacteriófago, y por lo tanto lo
+que permitía la replicación de nuevos bacteriófagos en el interior de la bacteria infectada.
+
+Los resultados de medir la mezcla descubrieron que al licuar las bacterias infectadas se removía hasta el 80\% de las proteínas marcas y solamente cerca del 40\% del ADN marcado
+indicando que el material restante se había incorporado al interior de las céulas.
+
+Con este experimento demostraron que Avery estaba en lo correcto y que el componente de la herencia genética
+es en realidad el ADN y no las proteínas como se creía.
+
+Por esta serie de experimentos Hershey recibe el premio Nobel en 1969.
 \begin{center}
-  \emph{\textbackslash{}documentclass[opciones]\{clase\}}
+  \begin{figure}[h!]
+  \includegraphics[width=60mm]{hershey.jpg}
+  \caption{Experimento Hershey-Chase .}
+  \end{figure}
 \end{center}
-
-
-Las opciones predefinidas para el valor de la clase del documento son:
-
-\begin{tabular}[t]{|c|p{5cm}|}
-  \hline
-  article & Comúnmente se utiliza para crear artículos, presentaciones, reportes y documentación de programas. \\ \hline
-  report & Por lo general se emplea esta clase para la creación de reportes de mayor longitud. \\ \hline
-  book & Para crear libros. \\ \hline
-  slides & Esta clase es útil para crear volantes y avisos. \\ \hline
-\end{tabular}
-
-\hfill \break
-Las opciones definen algunos aspectos de la apariencia general del documento, se deben
-definir separadas por comas y establecen cosas como el tamaño de fuente principal, el tipo de papel, entre otras.
-Podemos encontrar como opciones más comunes:
-\begin{center}
-  \begin{tabular}[t]{|m{2cm}|m{3cm}|}
-    \hline
-    10pt, 11pt, ... & Define el valor del tamaño de fuente, el valor por defecto es 10pt \\ \hline
-    a4paper, letterpaper, a5paper, etc & Define el tamaño de papel utilizado. \\ \hline
-    leqno & Posiciona la numeración de las fórmulas a la izquierda de cada una. \\ \hline
-  \end{tabular}  
-\end{center}
-
-
-
-
 %************************Manejo de Texto **************************************/
 \section{Manejo de Texto}
 \subsection{Manejo de párrafos}
